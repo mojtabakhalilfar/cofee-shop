@@ -28,9 +28,9 @@ const Category = () => {
                 </div>
                 <p className='w-[85%] font-bold text-[16px] text-center align-middle leading-[25px]'>بهترین و باکیفیت ترین برند ها ، چون شما لایق
                     بهترین ها هستید</p>
-                <div className='flex flex-col lg:flex-row justify-around items-center'>
+                <div className='flex flex-col sm:flex-row justify-around items-center'>
                     {category.map((items)=>(
-                        <div className='w-[340px] lg:w-[220px] h-[72px] lg:h-[87px] rounded-[800px] bg-[rgba(226,223,213,1)] my-2 lg:mx-2 flex justify-between items-center px-4'>
+                        <div className='w-[340px] sm:w-[220px] h-[72px] sm:h-[87px] rounded-[800px] bg-[rgba(226,223,213,1)] my-2 sm:mx-2 flex justify-between items-center px-4'>
                             <Link href="#" className=''>1</Link>
                             <div className='flex items-center'>
                                 <span className='font-bold text-[24px] leading-[42px] align-middle mr-4'>{items.title}</span>
@@ -47,11 +47,11 @@ const Category = () => {
 
 export default Category
 
-const Heart = () => {
+export const Heart = () => {
     return (
-        <div className='relative'>
-            <img className=' absolute bottom-0' src="/assets/coffeeBeans.png" alt="heart" />
-            <img className='rotate-[60deg] absolute bottom-0' src="/assets/coffeeBeans.png" alt="heart" />
+        <div className='relative py-10'>
+            <img className=' absolute bottom-0 aspect-square w-5' src="/assets/coffeeBeans.png" alt="heart" />
+            <img className='rotate-[60deg] absolute bottom-0 aspect-square w-5' src="/assets/coffeeBeans.png" alt="heart" />
         </div>
     )
 }

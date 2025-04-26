@@ -16,7 +16,7 @@ const amar:IAmar[]=[
         <div className='flex items-center justify-center w-full h-[240px] relative'>
             <div style={{ backgroundImage: "url('/assets/Vector.png')" }} className="bg-contain bg-no-repeat bg-center flex items-center justify-center w-[80%] h-[240px]">
                 <img className='h-[240px]' src="/assets/coffee.png" alt="coffee" />
-                <div className='absolute bottom-[-250px] lg:bottom-[-155px] w-[340px] lg:w-[1000px] h-[270px] lg:h-[155px] rounded-[20px] bg-[url(/assets/backgroundeStatist.png)] p-4 lg:py-8 grid grid-cols-2 lg:grid-cols-4'>
+                <div className='absolute bottom-[-250px] sm:bottom-[-155px] w-[340px] sm:w-[1000px] h-[270px] sm:h-[155px] rounded-[20px] bg-[url(/assets/backgroundeStatist.png)] p-4 sm:py-8 grid grid-cols-2 sm:grid-cols-4'>
                 {amar.map((items)=>(
                     <div className='flex flex-col items-center'>
                         <span className='font-bold text-[50px] leading-[50px] text-[rgba(79,44,25,1)]'>{items.count}</span>
