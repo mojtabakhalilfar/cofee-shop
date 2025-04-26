@@ -11,7 +11,8 @@ export default function Home() {
   <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
   
   <Category />
-  <Special />
+  <Special typecomponent="new" />
+  <Special typecomponent="discount" />
 
 
   <div className="h-96 w-full"></div>
