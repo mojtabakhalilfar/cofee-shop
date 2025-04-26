@@ -1,3 +1,4 @@
+import Brands from "@/components/Brands";
 import Category from "@/components/Category";
 import Special from "@/components/Special";
 import Statistics from "@/components/Statistics";
@@ -12,6 +13,7 @@ export default function Home() {
   
   <Category />
   <Special typecomponent="new" />
+  <Brands />
   <Special typecomponent="discount" />
 
 
