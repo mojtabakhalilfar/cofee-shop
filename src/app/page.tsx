@@ -7,6 +7,7 @@ import AboutUs from "@/components/AboutUs";
 import Articles from "@/components/Articles";
 import Instagram from "@/components/Instagram";
 
+
 export default function Home() {
   return (
 <div>
