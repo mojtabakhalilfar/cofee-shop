@@ -12,7 +12,7 @@ export default function Home() {
 <div>
   <Wellcome />
   <Statistics/>
-  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  <br/><br/><br/><br/><br/><br/><br/><br/><br/>
   
   <Category />
   <Special typecomponent="new" />

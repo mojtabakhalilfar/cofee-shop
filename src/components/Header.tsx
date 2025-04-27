@@ -4,20 +4,29 @@ import { AiOutlineShopping } from "react-icons/ai";
 
 const Header = () => {
   return (
-    <div className='w-full h-[82px] flex items-center justify-center'>
-      <div className='w-[360px] sm:w-full h-full bg-red-100 flex justify-between items-center px-2'>
+    <div className='w-full h-[82px] flex items-center justify-center' id='header'>
+      <div className='w-[360px] sm:w-full h-full flex justify-between items-center px-2'>
         <div className='w-[35%] sm:w-2/5 sm:flex sm:justify-center'>
 
           <div className='aspect-square h-[40px]'>
-            <div className='aspect-square w-[30px] relative'>
-              <AiOutlineShopping className='w-full h-full' />
-              <div className='aspect-square w-[15px] absolute top-[-10px]'>
-                <span className=''>0</span>
+            <div className='aspect-square w-[40px] relative sm:w-[100px] sm:h-[42px] sm:rounded-[42px] sm:bg-[rgba(176,162,123,1)] sm:flex sm:items-center sm:justify-around'>
+              <p dir='rtl' className='font-bold text-xs left-3 align-middle text-white'>
+                <span className='ml-2'>0</span>
+                تومان
+              </p>
+              <AiOutlineShopping className='w-[20px] aspect-square sm:w-[20px] sm:aspect-square' />
+              <div className='aspect-square w-[15px] absolute top-[20%] sm:top-0 left-[-10%] sm:left-0 bg-[rgba(176,162,123,1)] sm:bg-white rounded-[7.5px] flex justify-center items-center shadow-[0px_0px_4px_0px_rgba(0,0,0,0.17)]'>
+                <span className='w-[5.37px] h-[14px] font-[1000] text-[9px] text-center align-middle text-white sm:text-[rgba(176,162,123,1)]'>0</span>
               </div>
             </div>
           </div>
-          <div className='hidden sm:flex border border-[rgba(0,0,0,0.106)] rounded-[42px] w-[156px] h-[42px] mx-2'></div>
-          <div className='hidden sm:flex border border-[rgba(0,0,0,0.106)] rounded-[42px] w-[42px] h-[42px]'></div>
+          <button className='hidden sm:flex sm:items-center sm:justify-center border border-[rgba(0,0,0,0.106)] rounded-[42px] w-[156px] h-[42px] mx-2'>
+            <span className='font-bold text-[14px] align-middle text-[rgba(51,51,51,1)]'>ورود / ثبت نام</span>
+            <img className='w-[18.67px] aspect-square' src="/assets/Vector2.png" alt="" />
+          </button>
+          <button className='hidden sm:flex sm:items-center sm:justify-center border border-[rgba(0,0,0,0.106)] rounded-[42px] w-[42px] h-[42px]'>
+            <img className='w-[18.67px] aspect-square' src="/assets/search.png" alt="" />
+          </button>
 
 
 
