@@ -23,7 +23,7 @@ export default function Home() {
   <Instagram/>
 
 
-  <div className="h-96 w-full"></div>
+  {/* <div className="h-96 w-full"></div> */}
 </div>
 
   );
