@@ -5,6 +5,7 @@ import Statistics from "@/components/Statistics";
 import Wellcome from "@/components/Wellcome";
 import AboutUs from "@/components/AboutUs";
 import Articles from "@/components/Articles";
+import Instagram from "@/components/Instagram";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
   <Special typecomponent="discount" />
   <AboutUs />
   <Articles/>
+  <Instagram/>
 
 
   <div className="h-96 w-full"></div>
