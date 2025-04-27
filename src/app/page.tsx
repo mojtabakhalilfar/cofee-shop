@@ -4,6 +4,7 @@ import Special from "@/components/Special";
 import Statistics from "@/components/Statistics";
 import Wellcome from "@/components/Wellcome";
 import AboutUs from "@/components/AboutUs";
+import Articles from "@/components/Articles";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
   <Brands />
   <Special typecomponent="discount" />
   <AboutUs />
+  <Articles/>
 
 
   <div className="h-96 w-full"></div>
