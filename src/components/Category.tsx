@@ -28,7 +28,7 @@ const Category = () => {
                 </div>
                 <p className='w-[85%] font-bold text-[16px] text-center align-middle leading-[25px] my-4'>بهترین و باکیفیت ترین برند ها ، چون شما لایق
                     بهترین ها هستید</p>
-                <div className='flex flex-col sm:flex-row justify-around items-center'>
+                <div className='flex flex-col sm:grid sm:grid-cols-3 lg:flex lg:flex-row justify-around items-center'>
                     {category.map((items)=>(
                         <div className='w-[340px] sm:w-[220px] h-[72px] sm:h-[87px] rounded-[800px] bg-[rgba(226,223,213,1)] my-2 sm:mx-2 flex justify-between items-center px-4'>
                             <Link href="#" className='w-[30px] aspect-square flex items-center justify-center'><img className='w-[12.5px] aspect-square sm:hidden' src="/assets/arrow.png" alt="" /></Link>

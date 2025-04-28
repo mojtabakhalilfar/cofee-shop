@@ -25,7 +25,7 @@ const Special = ({ typecomponent }: { typecomponent: string }) => {
                 <HeaderSpecial />
                 <div className='flex items-center justify-center'>
 
-                    <div className='w-full grid grid-cols-2 gap-x-4 sm:gap-32 sm:grid-cols-4'>
+                    <div className='w-full grid grid-cols-2 gap-x-4 sm:gap-32 sm:grid-cols-2 lg:grid-cols-4'>
                         {
                             product.map((items) => (
                                 <div className='flex flex-col items-center w-full'>
