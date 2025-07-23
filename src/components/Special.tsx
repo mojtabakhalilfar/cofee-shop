@@ -28,7 +28,7 @@ const Special = ({ typecomponent }: { typecomponent: string }) => {
                     <div className='w-full grid grid-cols-2 gap-x-4 sm:gap-32 sm:grid-cols-2 lg:grid-cols-4'>
                         {
                             product.map((items) => (
-                                <div className='flex flex-col items-center w-full'>
+                                <div key={items.id} className='flex flex-col items-center w-full'>
                                     <div className='w-[169px] sm:w-[302px] aspect-square rounded-[5px] relative'>
                                         <img className='w-full aspect-square' src={items.image} alt={items.name} />
                                         <div className='w-[40px] sm:w-[50px] aspect-square rounded-[35px] bg-[rgba(176,162,123,1)] z-10 absolute top-[5%] right-[5%] flex justify-center items-center'>

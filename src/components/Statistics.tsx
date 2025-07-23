@@ -18,7 +18,7 @@ const Statistics = () => {
                 <img className='h-[240px]' src="/assets/coffee.png" alt="coffee" />
                 <div className='absolute bottom-[-250px] sm:bottom-[-155px] w-[340px] sm:w-4/5 lg:w-3/5 h-[250px] sm:h-[155px] rounded-[20px] bg-[url(/assets/backgroundeStatist.png)] p-4 sm:py-8 grid grid-cols-2 sm:grid-cols-4'>
                     {amar.map((items) => (
-                        <div className='flex flex-col items-center'>
+                        <div key={1} className='flex flex-col items-center'>
                             <span className='font-bold text-[50px] leading-[50px] text-[rgba(79,44,25,1)]'>{items.count}</span>
                             <span className='font-medium text-[25px] leading-[50px] text-[rgba(79,44,25,1)]'>{items.title}</span>
                         </div>

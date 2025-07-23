@@ -30,7 +30,7 @@ const Category = () => {
                     بهترین ها هستید</p>
                 <div className='flex flex-col sm:grid sm:grid-cols-3 lg:flex lg:flex-row justify-around items-center'>
                     {category.map((items)=>(
-                        <div className='w-[340px] sm:w-[220px] h-[72px] sm:h-[87px] rounded-[800px] bg-[rgba(226,223,213,1)] my-2 sm:mx-2 flex justify-between items-center px-4'>
+                        <div key={items.id} className='w-[340px] sm:w-[220px] h-[72px] sm:h-[87px] rounded-[800px] bg-[rgba(226,223,213,1)] my-2 sm:mx-2 flex justify-between items-center px-4'>
                             <Link href="#" className='w-[30px] aspect-square flex items-center justify-center'><img className='w-[12.5px] aspect-square sm:hidden' src="/assets/arrow.png" alt="" /></Link>
                             <div className='flex items-center'>
                                 <span className='font-bold text-[24px] leading-[42px] align-middle mr-4'>{items.title}</span>

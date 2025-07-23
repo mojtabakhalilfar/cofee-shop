@@ -18,7 +18,7 @@ const Footer = () => {
             <a href='#header' className='w-[50px] aspect-square rounded-[25px] bg-white shadow-[0px_0px_5px_0px_rgba(0,0,0,0.17)] flex items-center justify-center absolute bottom-4 left-4'><img src="/assets/up.png" alt="" /></a>
             <div className='flex flex-col sm:flex-row-reverse items-end sm:justify-around border-b border-[rgba(82,82,82,1)] w-full my-6 pb-2'>
                 {info.map((items) => (
-                    <div className=' flex flex-row-reverse items-center px-4 my-3'>
+                    <div key={items.id} className=' flex flex-row-reverse items-center px-4 my-3'>
                         <div className='w-[60px] sm:w-[70px] aspect-square rounded-[30px] sm:rounded-[35px] bg-[rgba(176,162,123,1)] flex items-center justify-center'>
 
                             <img className='w-[35px] aspect-square' src={items.image} alt={items.title} />

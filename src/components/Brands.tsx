@@ -26,7 +26,7 @@ const Brands = () => {
                 <span className='font-[500] sm:font-bold text-[16px] sm:text-[18px] align-middle text-[rgba(61,61,61,1)] leading-[25px] mb-8'>بر اساس برند مورد علاقتان انتخاب کنید</span>
                 <div className='grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-20'>
                     {brands.map((items)=>(
-                        <div className='w-[147px] h-[218px] rounded-[800px] border-[2px] border-[rgba(172,152,141,1)] flex flex-col items-center justify-around'>
+                        <div key={items.id} className='w-[147px] h-[218px] rounded-[800px] border-[2px] border-[rgba(172,152,141,1)] flex flex-col items-center justify-around'>
                             <img className='aspect-square w-[113px] rounded-[100px]' src={items.image} alt={items.name} />
                             <span className='font-bold text-[25px] sm:text-[22px] leading-[56px] text-center align-middle uppercase'>{items.name}</span>
                         </div>
